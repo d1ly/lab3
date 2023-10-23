@@ -1,7 +1,20 @@
 import java.util.ArrayList;
 import java.util.List;
 
-interface StringChecker { boolean checkString(String s); }
+interface StringChecker { 
+  boolean checkString(String s); 
+}
+
+class StringCheck implements StringChecker {
+  public boolean checkString(String s) {
+    if (s instanceof String) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+}
 
 class ListExamples {
 
